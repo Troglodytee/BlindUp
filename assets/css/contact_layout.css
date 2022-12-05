@@ -1,0 +1,79 @@
+.networks-container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+.network-icon {
+    width: 8vw;
+}
+
+form {
+    width: 90%;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.button-white {
+    margin-top: 15px;
+}
+
+input, textarea {
+    font-family: arial;
+}
+
+.validation-message-background {
+    display: none;
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.validation-message {
+    z-index: 300;
+    width: fit-content;
+    margin: auto;
+    margin-top: 40vh;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.validation-message img {
+    z-index: 400;
+    width: 10%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+@media all and (min-width: 1024px)
+{
+    .network-icon {
+        width: 4vw;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    .validation-message img {
+        width: 5%;
+    }
+}

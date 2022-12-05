@@ -1,0 +1,14 @@
+.presentation-image {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .presentation-image {
+        content: url("../img/photos_news/pepite_normandie_mini.jpg");
+    }
+}
+@media screen and (min-width: 1024px) {
+    .presentation-image {
+        content: url("../img/photos_news/pepite_normandie.jpg");
+    }
+}

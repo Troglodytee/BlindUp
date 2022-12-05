@@ -1,0 +1,73 @@
+:root {
+    --light-grey: #4c4c4c;
+    --dark-grey: #323232;
+    --yellow: #febb00;
+}
+
+* {
+    color: white;
+    transition: all ease-in-out 0.4s;
+}
+
+.bg-light-grey {
+    background-color: var(--light-grey);
+}
+
+.bg-dark-grey {
+    background-color: var(--dark-grey);
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button-yellow {
+    border-color: var(--yellow);
+    color: var(--yellow);
+}
+
+.button-yellow:hover {
+    background-color: var(--yellow);
+    color: var(--dark-grey);
+}
+
+.button-yellow-active {
+    background-color: var(--yellow);
+    color: var(--dark-grey);
+}
+
+.button-white {
+    border-color: white;
+    color: white;
+}
+
+.button-white:hover {
+    background-color: white;
+    color: var(--light-grey);
+}
+
+.clickable {
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.clickable:hover {
+    transform: scale(1.1, 1.1);
+}
+
+main {
+    animation: page-in 0.4s;
+    transform-origin: 50vw 50vh;
+}
+
+@keyframes page-in {
+    0% {
+        transform: scale(0.8, 0.8);
+    }
+    60% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}

@@ -1,0 +1,61 @@
+.team-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+}
+
+.team-member-image {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.plan {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.mobile-download-button {
+    width: 15vw;
+    margin-right: 20px;
+}
+
+.desktop-download-button {
+    width: 5vw;
+}
+
+.shop-button {
+    display: flex;
+    align-items: center;
+}
+
+.shop-button img {
+    height: 30px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 799px) {
+    .team-container {
+        flex-direction: column;
+        min-height: 220px;
+    }
+
+    .team-member-image {
+        width: 60px;
+        border-radius: 30px;
+    }
+
+    .mobile-download-button {
+        width: 30vw;
+        margin-right: 10px;
+    }
+
+    .desktop-download-button {
+        width: 10vw;
+    }
+}

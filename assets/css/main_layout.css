@@ -1,0 +1,22 @@
+.main-nav {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-nav-button {
+    width: 15%;
+    text-align: center;
+}
+
+video {
+    width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+    video {
+        width: 100%;
+    }
+}

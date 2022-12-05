@@ -1,0 +1,446 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    border-radius: 4px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background-color: #FEBB00;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #be8b00;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background: none;
+    text-decoration: none;
+    font-family: "Comfortaa", cursive;
+    line-height: 1.5;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+header img {
+    max-width: 25vw;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer img {
+    max-width: 25vw;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.button {
+    width: fit-content;
+    border: 1px solid;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.center-container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Petit téléphone */
+@media screen and (max-width: 479px) {
+    * {
+        font-size: 12px;
+    }
+
+    header {
+        height: 9vh;
+        font-size: 14px;
+    }
+    
+    header *
+    {
+        margin: 5px;
+    }
+
+    header img {
+        max-height: 7vh;
+    }
+
+    main {
+        margin-top: 9vh;
+        min-height: 77vh;
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    footer nav {
+        flex-direction: column;
+    }
+
+    footer nav a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .button {
+        border-radius: 2px;
+        padding: 3px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .spaced {
+        margin: 20px 0px;
+    }
+}
+
+/* Téléphone moyen / Petit téléphone en paysage */
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    * {
+        font-size: 12px;
+    }
+
+    header {
+        height: 10vh;
+        font-size: 16px;
+    }
+    
+    header *
+    {
+        margin: 6px;
+    }
+
+    header img {
+        max-height: 8vh;
+    }
+
+    main {
+        margin-top: 10vh;
+        min-height: 74vh;
+        padding: 25px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    footer nav {
+        flex-direction: column;
+    }
+
+    footer nav a {
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+    .button {
+        border-radius: 3px;
+        padding: 3px;
+    }
+
+    h1, h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .spaced {
+        margin: 25px 0px;
+    }
+}
+
+/* Tablette */
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    * {
+        font-size: 14px;
+    }
+    
+    header {
+        height: 11vh;
+        font-size: 18px;
+    }
+    
+    header *
+    {
+        margin: 8px;
+    }
+
+    header img {
+        max-height: 9vh;
+    }
+
+    main {
+        margin-top: 11vh;
+        min-height: 71vh;
+        padding: 30px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+
+    footer * {
+        margin: 8px;
+    }
+
+    footer nav {
+        flex-direction: column;
+    }
+
+    footer nav a {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .button {
+        border-radius: 4px;
+        padding: 4px;
+    }
+
+    h1, h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .spaced {
+        margin: 30px 0px;
+    }
+}
+
+/* Tablette en paysage / Laptop basse résolution */
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    * {
+        font-size: 16px;
+    }
+    
+    header {
+        height: 11vh;
+        font-size: 18px;
+    }
+    
+    header *
+    {
+        margin: 10px;
+    }
+
+    header img {
+        max-height: 9vh;
+    }
+
+    main {
+        margin-top: 11vh;
+        min-height: 69vh;
+        padding: 35px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+
+    footer * {
+        margin: 10px;
+    }
+
+    footer nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer nav a {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .button {
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    h1, h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .spaced {
+        margin: 35px 0px;
+    }
+}
+
+/* Grande tablette paysage / Laptop et Desktop courant */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    * {
+        font-size: 18px;
+    }
+    
+    header {
+        height: 12vh;
+        font-size: 18px;
+    }
+    
+    header *
+    {
+        margin: 10px;
+    }
+
+    header img {
+        max-height: 10vh;
+    }
+
+    main {
+        margin-top: 12vh;
+        min-height: 68vh;
+        padding: 40px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+
+    footer * {
+        margin: 10px;
+    }
+
+    footer nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer nav a {
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
+    .button {
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    h1, h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .spaced {
+        margin: 40px 0px;
+    }
+}
+
+/* Laptop et Desktop haute résolution */
+@media screen and (min-width: 1280px) {
+    * {
+        font-size: 20px;
+    }
+    
+    header {
+        height: 12vh;
+        font-size: 20px;
+    }
+    
+    header *
+    {
+        margin: 10px;
+    }
+
+    header img {
+        max-height: 10vh;
+    }
+
+    main {
+        margin-top: 12vh;
+        min-height: 68vh;
+        padding: 50px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+
+    footer * {
+        margin: 10px;
+    }
+
+    footer nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer nav a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    h1, h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    .spaced {
+        margin: 50px 0px;
+    }
+}

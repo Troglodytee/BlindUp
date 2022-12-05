@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <!--@@@ Head-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Indication of the authors of the site -->
+    <meta name="author" content="Thomas Baricault, Adrian Lecorf">
+
+    <!-- Indication of the official url -->
+    <link rel="canonical" href="https://www.blindup.thomas-baricault.fr/about-us.html">
+
+    <!-- Indication of the different urls according to the languages -->
+    <link rel="alternate" hreflang="fr" href="https://www.blindup.thomas-baricault.fr/about-us.html">
+
+    <!-- Link style sheets -->
+    <link rel="stylesheet" href="assets/css/global_layout.css">
+    <link rel="stylesheet" href="assets/css/global_effects.css">
+    <link rel="stylesheet" href="assets/css/about_us_layout.css">
+    <link rel="stylesheet" href="assets/css/about_us_effects.css">
+
+    <!-- Link Comfortaa font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link javascript files -->
+    <script src="assets/js/external_links.js"></script>
+
+    <!-- Add the icon -->
+    <link rel="icon" type="vector/svg" href="assets/img/svg/icon.svg">
+
+    <!-- Add a description to the site -->
+    <meta name="description" content="BlindUp est une startup française fondée par trois étudiants, qui a pour vocation de solidarité envers les personnes aveugles et malvoyantes en leur proposant des lunettes connectées qui pourront les assister dans leur quotidien.">
+
+    <!-- Allow indexation robots to index all pages -->
+    <meta name=”robots” content="index, follow">
+
+    <title>A propos - BlindUp</title>
+</head>
+
+<body class="bg-light-grey" onload="setAboutLinks()">
+    <!--@@@ Header-->
+    <header class="bg-dark-grey">
+        <!-- Logo -->
+        <a aria-label="logo et lien vers la page d'accueil" href="index.html">
+            <img role="img" aria-label="logo BlindUp" class="clickable" src="assets/img/logo_jaune.png" alt="Logo">
+        </a>
+        <!-- Navigation -->
+        <nav role="navigation">
+            <a aria-label="lien vers la page à propos" class="button button-yellow button-yellow-active" href="about-us.html">A propos</a>
+            <a aria-label="lien vers la page actualités" class="button button-yellow" href="news.html">Actualités</a>
+            <a aria-label="lien vers la page contact" class="button button-yellow" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!--@@@ Main content-->
+    <main role="main">
+        <section>
+            <!-- Title -->
+            <h1 role="heading" class="spaced">Le projet Blindup, qu'est ce que c'est ?</h1>
+            <!-- Explanation -->
+            <p class="spaced">Le projet Blindup a pour vocation de rendre service aux personnes aveugles ou malvoyantes, grâce à des lunettes communiquant avec un opérateur distant qui a pour but de guider la personne en situation de handicap.</p>
+        </section>
+        <section>
+            <!-- Title -->
+            <h2 role="heading" class="spaced">L'équipe</h2>
+            <!-- The team -->
+            <div class="team-container spaced">
+                <div class="team-member">
+                    <img role="img" aria-label="photo de Bilal" class="team-member-image" src="assets/img/team/bilal_zaidi.jpg" alt="Bilal zaidi">
+                    <p>Bilal Zaidi</p>
+                </div>
+                <div class="team-member">
+                    <img role="img" aria-label="photo de Melvin" class="team-member-image" src="assets/img/team/melvin_salez.jpg" alt="Melvin Salez">
+                    <p>Melvin Salez</p>
+                </div>
+                <div class="team-member">
+                    <img role="img" aria-label="photo de Yacine" class="team-member-image" src="assets/img/team/yacine_diabi.jpg" alt="Yacine Diabi">
+                    <p>Yacine Diabi</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Title -->
+            <h2 role="heading" class="spaced">Fonctionnement</h2>
+            <!-- Explanation -->
+            <p class="spaced">Les lunettes sont équipées de deux caméras grand angle renvoyant une vision binoculaire à un opérateur distant. Cet opérateur va guider l'utilisateur grâce à l'image renvoyée par les lunettes. Les indications fournies par l'opérateur sont transmises à l'utilisateur par conduction osseuse ce qui lui permet de ne pas perdre son sens le plus précieux : l'ouïe.</p>
+            <p class="spaced">L'opérateur distant peut être un employé de BlindUp, un bénévole d'une association, ou encore un membre de famille ou un proche de la personne en situation de handicap.</p>
+            <!-- Plan -->
+            <img role="img" aria-label="schéma du fonctionnement de BlindUp" class="plan spaced" src="assets/img/svg/plan.svg" alt="Schéma du fonctionnement">
+        </section>
+        <section>
+            <!-- Title -->
+            <h2 role="heading" class="spaced">Devenir bénévole</h2>
+            <!-- Explanation -->
+            <p class="spaced">Pour devenir bénévole ou simplement venir en aide à un de vos proche en situation de handicap vous pouvez télécharger l'application BlindUp gratuitement pour ordinateur ou mobile.</p>
+        </section>
+        <section>
+            <!-- Title -->
+            <h2 role="heading" class="spaced">Télécharger l'application</h2>
+            <!-- Subtitle -->
+            <h3 role="heading" class="spaced">Pour mobile :</h3>
+            <!-- Mobile download links -->
+            <div class="center-container-row">
+                <a id="app-store-link" href="#">
+                    <img class="mobile-download-button clickable" src="assets/img/app_download/app_store_badge.svg" alt="Icone de téléchargement sur App Store">
+                </a>
+                <a id="google-play-link" href="#">
+                    <img class="mobile-download-button clickable" src="assets/img/app_download/google_play_badge.svg" alt="Icone de téléchargement sur Google Play">
+                </a>
+            </div>
+            <!-- Subtitle -->
+            <h3 role="heading" class="spaced">Pour ordinateur :</h3>
+            <!-- Desktop download link -->
+            <div class="center-container-row">
+                <a id="desktop-link" href="#">
+                    <img role="img" aria-label="icone de téléchargement ordinateur" class="desktop-download-button clickable" src="assets/img/app_download/desktop_download.svg" alt="Icone de téléchargement pour ordinateur">
+                </a>
+            </div>
+        </section>
+        <section>
+            <!-- Title -->
+            <h2 role="heading" class="spaced">Acheter les lunettes</h2>
+            <!-- Shop link -->
+            <div class="center-container-row">
+                <a id="shop-link" href="#">
+                    <div aria-description="lien vers la boutique" class="shop-button button button-white">
+                        <img role="img" aria-label="icone de la boutique" src="assets/img/svg/cart.svg" alt="Icone de boutique">
+                        <p>Accéder à la boutique</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!--@@@ Footer-->
+    <footer class="bg-dark-grey">
+        <!-- Logo -->
+        <a aria-label="logo et lien vers l'accueil" href="index.html">
+            <img role="img" aria-label="logo BlindUp" class="clickable" src="assets/img/logo_jaune.png" alt="Logo">
+        </a>
+        <!-- Navigation -->
+        <nav role="navigation">
+            <a aria-label="lien vers la page de contact" class="button button-yellow" href="contact.html">Contact</a>
+            <a aria-label="lien vers la page de politique de confidentialité" class="button button-yellow" href="privacy-policy.html">Politique de confidentialité</a>
+            <a aria-label="lien vers la page des mentions légales" class="button button-yellow" href="legal-notices.html">Mentions légales</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

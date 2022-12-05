@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <!--@@@ Head-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Indication of the authors of the site -->
+    <meta name="author" content="Thomas Baricault, Adrian Lecorf">
+
+    <!-- Indication of the official url -->
+    <link rel="canonical" href="https://www.blindup.thomas-baricault.fr/contact.html">
+
+    <!-- Indication of the different urls according to the languages -->
+    <link rel="alternate" hreflang="fr" href="https://www.blindup.thomas-baricault.fr/contact.html">
+
+    <!-- Link style sheets -->
+    <link rel="stylesheet" href="assets/css/global_layout.css">
+    <link rel="stylesheet" href="assets/css/global_effects.css">
+    <link rel="stylesheet" href="assets/css/contact_layout.css">
+    <link rel="stylesheet" href="assets/css/contact_effects.css">
+
+    <!-- Link Comfortaa font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link javascript files -->
+    <script src="assets/js/external_links.js"></script>
+    <script src="assets/js/contact.js"></script>
+
+    <!-- Add the icon -->
+    <link rel="icon" type="vector/svg" href="assets/img/svg/icon.svg">
+
+    <!-- Add a description to the site -->
+    <meta name="description" content="BlindUp est une startup française fondée par trois étudiants, qui a pour vocation de solidarité envers les personnes aveugles et malvoyantes en leur proposant des lunettes connectées qui pourront les assister dans leur quotidien.">
+
+    <!-- Allow indexation robots to index all pages -->
+    <meta name="robots" content="index, follow">
+
+    <title>Contact - BlindUp</title>
+</head>
+
+<body class="bg-light-grey">
+    <!--@@@ Header-->
+    <header class="bg-dark-grey">
+        <!-- Logo -->
+        <a aria-label="logo et lien vers la page d'accueil" href="index.html">
+            <img role="img" aria-label="logo BlindUp" class="clickable" src="assets/img/logo_jaune.png" alt="Logo">
+        </a>
+        <!-- Navigation -->
+        <nav role="navigation">
+            <a aria-label="lien vers la page à propos" class="button button-yellow" href="about-us.html">A propos</a>
+            <a aria-label="lien vers la page actualités" class="button button-yellow" href="news.html">Actualités</a>
+            <a aria-label="lien vers la page contact" class="button button-yellow button-yellow-active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!--@@@ Main content-->
+    <main role="main">
+        <section>
+            <!-- Title -->
+            <h1 role="heading" class="spaced">Nous contacter</h1>
+            <!-- Social networks -->
+            <div class="networks-container center-container-row spaced">
+                <a aria-label="icone et lien vers facebook" id="facebook-link" href="#">
+                    <img role="img" class="network-icon clickable" src="assets/img/networks/facebook.png" alt="Facebook">
+                </a>
+                <a aria-label="icone et lien vers linkedin" id="linkedin-link" href="#">
+                    <img role="img" class="network-icon clickable" src="assets/img/networks/linkedin.png" alt="Linkedin">
+                </a>
+                <a aria-label="icone et lien vers youtube" id="youtube-link" href="#">
+                    <img role="img" class="network-icon clickable" src="assets/img/networks/youtube.svg" alt="Youtube">
+                </a>
+            </div>
+            <!-- Form -->
+            <div class="center-container-column spaced">
+                <form id="message-form" method="POST" action="#" onsubmit="showValidationMessage(); return false">
+                    <label for="name">Nom :</label>
+                    <input aria-label="zone d'entrée du nom" aria-required="true" aria-multiline="false" class="form-input bg-input-grey" id="name" type="text" name="name" placeholder="Votre nom" required>
+                    <label for="firstname">Prénom :</label>
+                    <input aria-label="zone d'entrée du prénom" aria-required="true" aria-multiline="false" class="form-input bg-input-grey" id="firstname" type="text" name="firstname" placeholder="Votre prénom" required>
+                    <label for="email">Email :</label>
+                    <input aria-label="zone d'entrée de l'email" aria-required="true" aria-multiline="false" class="form-input bg-input-grey" id="email" type="email" name="email" placeholder="exemple@domaine.com" required>
+                    <label for="message">Message :</label>
+                    <textarea aria-label="zone d'entrée pour le message" aria-required="true" aria-multiline="true" class="form-input bg-input-grey" id="message" name="message" rows="5" cols="50" placeholder="Votre message" required></textarea>
+                    <input aria-label="bouton d'envoie du message" aria-haspopup="dialog" aria-controls="validation-message" class="button button-white" type="submit" value="Envoyer">
+                </form>
+            </div>
+            <!-- Validation message -->
+            <div aria-description="popup de validation de l'envoie d'un message" class="validation-message-background" id="validation-message">
+                <div class="validation-message">
+                    <img role="img" aria-label="femer le message de validation" src="assets/img/svg/cross.svg" alt="Croix" onclick="hideValidationMessage()">
+                    <p>Votre message a bien été envoyé</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--@@@ Footer-->
+    <footer class="bg-dark-grey">
+        <!-- Logo -->
+        <a aria-label="logo et lien vers l'accueil" href="index.html">
+            <img role="img" aria-label="logo BlindUp" class="clickable" src="assets/img/logo_jaune.png" alt="Logo">
+        </a>
+        <!-- Navigation -->
+        <nav role="navigation">
+            <a aria-label="lien vers la page de contact" class="button button-yellow button-yellow-active" href="contact.html">Contact</a>
+            <a aria-label="lien vers la page de politique de confidentialité" class="button button-yellow" href="privacy-policy.html">Politique de confidentialité</a>
+            <a aria-label="lien vers la page des mentions légales" class="button button-yellow" href="legal-notices.html">Mentions légales</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

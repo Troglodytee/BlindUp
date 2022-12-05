@@ -1,0 +1,15 @@
+.desktop-download-button {
+    filter: invert(1);
+}
+
+.shop-button img {
+    filter: invert(1);
+}
+
+.shop-button:hover img {
+    filter: invert(0.289);
+}
+
+.shop-button:hover p {
+    color: var(--light-grey);
+}
